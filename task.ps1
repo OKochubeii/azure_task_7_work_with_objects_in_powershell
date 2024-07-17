@@ -12,5 +12,5 @@ foreach ($file in $filesList) {
     }
 }
 
-$resultFile = ".\result"
+$resultFile = ".\result.json"
 $resultRegions | ConvertTo-Json -Depth 1 | Out-File -FilePath $resultFile -Encoding utf8
